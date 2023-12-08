@@ -19,7 +19,8 @@
     "react-bootstrap": "^2.9.0",
     "react-devtools": "^4.28.5",
     "react-dom": "^18.2.0",
-    "react-qr-code": "^2.0.12"
+    "react-qr-code": "^2.0.12",
+    "react-router-dom": "^6.20.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",

@@ -4,20 +4,20 @@ import PropTypes from 'prop-types';
 
 const MessageArea = ({ message, setMessage }) => {
     return(
-        <div style={{ display: 'flex', flexDirection: 'column', marginBottom: '8px' }} >
+        <div style={{ display: 'flex', flexDirection: 'column', marginBottom: '8px', justifyContent:'center' }}  >
             <div style={{alignItems:'flex-start'}}> 
                 <Typography>
                     Mensaje de WhatsApp
                 </Typography>
             </div>
-            <div style={{alignItems: 'center'}}>
+            <div style={{alignItems: 'center', justifyContent:'center'}}>
                 <TextField 
                     variant='outlined'
                     placeholder='Ingrese mensaje que desee enviar'
                     minRows={12}
                     maxRows={16}
                     style={{
-                    width: '80%',
+                    width: '100%',
                     minHeight: '40px',
                     overflowY: 'auto',
                     }}

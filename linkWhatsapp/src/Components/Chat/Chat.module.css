@@ -6,10 +6,11 @@ body {
 position: relative;
 top: 0;
 left: 0;
-height: 100vh; /* Ajusta la altura a la altura de la ventana */
+height: 90vh; /* Ajusta la altura a la altura de la ventana */
 display: flex; 
 flex-direction: column; /* Cambia la dirección del flex a columna */
 background: #efe6dd;
+border: #777 1px solid;
 }
 .chat-box::before{
 content: '';
@@ -80,22 +81,30 @@ opacity: 0.5;
 }
 .message-box{
     position: relative;
-    padding: 40px;    
-    height: 32rem;
+    padding: 32px;    
+    height: 40rem;
+    overflow: hidden;
 }
-.message-box .message{
+.message-box .message {
     position: relative;
     border-radius: 10px;
     padding: 8px;
     background: #fff;
     border-top-left-radius: 0;
-}   
+    height: auto; /* Cambiado a 'auto' para permitir el crecimiento vertical */
+    overflow: hidden;
+    width: 240px; /* Establece el ancho máximo deseado */
+    word-wrap: break-word; /* Permite que las palabras largas se rompan y vayan a la línea siguiente */
+    overflow: auto; /* Puedes cambiar a 'scroll' o 'hidden' según tus necesidades */
+    max-height: 100px; /* Establece la altura máxima deseada antes de que aparezca la barra de desplazamiento vertical */
+
+}
 
 .message-box .message::before {
     content: '';
     position: absolute;
     top: 0;
-    left: -5px; /* Ajusta el valor negativo para moverlo más a la izquierda */
+    
     border: 10px solid transparent;
     border-top: 10px solid #fff;
   }
